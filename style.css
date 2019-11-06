@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.center{
+    text-align: center;
+}
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+header{
+    margin-top: 40px;
+}
+.logo{
+    text-decoration: none;
+    text-trans.form: uppercase;
+    font-size: 26px;
+    color: #000;
+    text-align: center;
+    display: block;
+}
+nav ul{
+    margin: 30px auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.form{
+    width: 60%;
+    margin: 30px auto;
+}
+.form label:not(.gdpr){
+    display: block;
+}
+.form input#nume,
+.form input#prenume,
+.form select,
+textarea{
+    width: 100%;
+    border: 1px solid;
+    padding: 5px 0 5px 5px;
+}
+.form .row{
+    margin: 15px 0;
+}
+.form .row .column{
+    display: inline-block;
+    width: 46%;
+}
+.form .row .column:first-child{
+    margin-right:7%;
+}
+.form textarea{
+    min-height: 100px;
+    max-width: 100%;
+}
+.form .send-btn{
+    margin-top: 15px;
+    padding: 5px 15px;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 3px;
+    background: #ddd;
+    border: 1px solid grey;
+}
+.required{
+    color:#f00;
+    font-size: 12px;
+}
+p.success{
+    background: #17962d;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 16px;
+}
+p.error{
+    background: #9e000a;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 16px;
+}
+@media(min-width:768px){
+    .burger-menu{
+        display: none;
+    }
+    nav ul{
+        display: block !important;
+    }
+    nav ul li{
+        display: inline-block;
+        margin: 0 15px;
+    }
+}
+@media(max-width:767px) {
+    header{
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .burger-menu {
+        display: block;
+        float: right;
+        padding-right: 30px;
+        position: absolute;
+        top: 0;
+        right: 30px;
+        cursor: pointer;
+    }
+    nav ul{
+        display: none;
+    }
+    nav ul li{
+        display: block;
+        margin: 15px 0;
+    }
+    .burger-menu span {
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 6px 0;
+        display: block;
+    }
+    .form{
+        width: auto;
+        padding: 0 30px;
+    }
+    .form .row .column{
+        width: 100%;
+    }
+    .form .row .column:first-child{
+        margin-bottom: 15px;
+    }
+}

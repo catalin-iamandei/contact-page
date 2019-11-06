@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">Logo</a>
+            <nav>
+                <div class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Despre noi</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div id="map" style="height: 480px; width: 100%; margin: 0 auto;"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="form">
+                <div class="row">
+                    <div class="column">
+                        <label for="nume">Nume</label>
+                        <input id="nume" type="text" name="nume">
+                    </div>
+                    <div class="column">
+                        <label for="prenume">Prenume</label>
+                        <input id="prenume" type="text" name="prenume">
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="mesaj">Mesaj</label>
+                    <textarea id="mesaj" name="mesaj"></textarea>
+                </div>
+                <div class="row center">
+                    <input id="politica" type="checkbox" name="politica">
+                    <label class="gdpr" for="politica">Sunt de acord cu Politica privind datele personale</label>
+                </div>
+                <div class="row">
+                    <select>
+                        <option value="redirect">Redirect catre google.ro</option>
+                        <option value="displayMessage">Functie de afisare a mesajului de confirmare</option>
+                    </select>
+                </div>
+                <div class="row center">
+                    <input onClick="sendForm()" class="send-btn" type="submit" value="Trimite">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANkisUlCHMJY8FGcV5HVC-59rmSGEuJsU"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
